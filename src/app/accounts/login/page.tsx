@@ -2,13 +2,13 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaSquareFacebook } from "react-icons/fa6";
-import bg1 from "./images/loginBg1.png";
-import bg2 from "./images/loginBg2.png";
-import bg3 from "./images/loginBg3.png";
-import iPFrame2 from "./images/frame.png";
-import logoText from "./images/737566.png";
-import downloadAS from "./images/downloadAppStore.png";
-import downloadGP from "./images/downloadGooglePlay.png";
+import bg1 from "../images/loginBg1.png";
+import bg2 from "../images/loginBg2.png";
+import bg3 from "../images/loginBg3.png";
+import iPFrame2 from "../images/frame.png";
+import logoText from "../images/737566.png";
+import downloadAS from "../images/downloadAppStore.png";
+import downloadGP from "../images/downloadGooglePlay.png";
 import Link from "next/link";
 import "./style.scss";
 
@@ -111,7 +111,9 @@ export default function LoginPage() {
           {/* Box 2 */}
           <div className=" mt-4 justify-center py-6 text-center text-sm ring-1 ring-gray-300">
             Don&apos;t have an account?&nbsp;
-            <span className="font-semibold text-[#0095F6]">Sign up</span>
+            <span className="font-semibold text-[#0095F6]">
+              <Link href="/accounts/signup"> Sign up</Link>
+            </span>
           </div>
 
           {/* App download */}
