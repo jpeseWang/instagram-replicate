@@ -11,6 +11,7 @@ import downloadAS from "../images/downloadAppStore.png";
 import downloadGP from "../images/downloadGooglePlay.png";
 import Link from "next/link";
 import "./style.scss";
+import Footer from "@/components/Footer/Footer";
 
 export default function LoginPage() {
   const images = [bg1, bg2, bg3];
@@ -132,6 +133,7 @@ export default function LoginPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
