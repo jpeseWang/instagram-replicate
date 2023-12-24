@@ -22,14 +22,7 @@ const userSchema = new Schema(
       unique: true,
       required: true,
     },
-    dob: {
-      type: String,
-      required: true,
-    },
-    career: {
-      type: String,
-      required: true,
-    },
+
     phone: {
       type: String,
       unique: true,
@@ -39,25 +32,18 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    subscription: {
-      type: String,
-      required: true,
-    },
-    coverImg: {
-      type: String,
-      required: false,
-    },
+
     about: {
       type: String,
       required: false,
     },
     message: [
       {
-        sender: {
+        senderID: {
           type: String,
           required: true,
         },
-        receiver: {
+        receiverID: {
           type: String,
           required: true,
         },
@@ -69,21 +55,11 @@ const userSchema = new Schema(
           type: String,
           required: true,
         },
-        senderFullname: {
-          type: String,
-          required: true,
-        },
-        senderAvatar: {
-          type: String,
-        },
-        senderID: {
-          type: String,
-        },
       },
       { timestamps: true },
     ],
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 //If the User collection does not exist create a new one.

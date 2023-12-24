@@ -20,39 +20,14 @@ const postSchema = new Schema(
       type: String,
       required: true,
     },
-    date: {
-      type: String,
-      required: true,
-    },
-    datetime: {
-      type: String,
-      required: true,
-    },
-    author: {
-      type: String,
-      required: true,
-    },
-    authorCareer: {
-      type: String,
-    },
-    authorAvatar: {
-      type: String,
-    },
     authorID: {
       type: String,
+      required: true,
     },
-    authorUsername: {
-      type: String,
-    },
+
     comment: [
       {
-        name: {
-          type: String,
-        },
-        id: {
-          type: String,
-        },
-        avatar: {
+        userID: {
           type: String,
         },
         content: {
@@ -65,7 +40,7 @@ const postSchema = new Schema(
       { timestamps: true },
     ],
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 //If the Post collection does not exist create a new one.

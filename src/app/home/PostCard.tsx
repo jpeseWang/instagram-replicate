@@ -23,21 +23,22 @@ export default function PostCard() {
               src="https://images.unsplash.com/photo-1701589623520-4fb55453094c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
             <div className="ml-3 ">
-              <span className="block text-sm font-semibold leading-tight antialiased dark:text-gray-400">
-                Quang
+              <span className="text-sm font-semibold leading-tight antialiased dark:text-gray-400">
+                jpese_wang
               </span>
-              <span className="block text-xs text-gray-600 dark:text-gray-400">
+              <span className="text-xs text-gray-600"> • </span>
+              <span className="text-sm text-gray-600 dark:text-gray-400">
                 2 days ago
               </span>
             </div>
           </Link>
         </div>
-        <p className="ml-3 text-gray-800 dark:text-white">Nice</p>
+
         <img
-          src="https://images.unsplash.com/photo-1701589623520-4fb55453094c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          className="aspect-w-1 aspect-h-1 my-2 w-full object-cover"
+          src="https://images.unsplash.com/photo-1701839339549-c19ef662105f?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          className="aspect-w-1 aspect-h-1 my-2 h-[468px] w-full object-cover"
         />
-        <div className="mx-4 mb-2 mt-3 flex items-center justify-between">
+        <div className=" mb-2 mt-3 flex items-center justify-between">
           <div className="flex gap-4">
             {/* <span
                 className=" h-6 w-6 cursor-pointer "
@@ -73,18 +74,25 @@ export default function PostCard() {
             />
           </div>
         </div>
-        <div className="mx-4 mb-2 mt-2 text-sm font-semibold">
-          99 lượt thích
+        <div className=" mb-2 mt-2 text-sm font-semibold">99 likes</div>
+        <div className="flex">
+          <div className="text-sm font-semibold  antialiased dark:text-gray-400">
+            jpese_wang
+          </div>{" "}
+          <span className="ml-1 text-sm text-gray-800 dark:text-white">
+            Nice
+          </span>
         </div>
-        <div className="mx-4 text-sm font-medium text-gray-500">
+
+        <div className="text-sm font-medium text-gray-500">
           <p
-            className="cursor-pointer"
+            className="cursor-pointer font-normal"
             // onClick={() => {
             //   setViewModalParams(post._id)
             //   setViewModalIsOpen(true)
             // }}
           >
-            Xem tất cả 112 bình luận
+            View all 3 comments
           </p>
 
           <div>
@@ -93,8 +101,8 @@ export default function PostCard() {
               //   setViewModalParams(post._id)
               //   setViewModalIsOpen(true)
               // }}
-              placeholder="Viết bình luận..."
-              className="my-2 bg-transparent font-normal text-gray-800 focus:outline-none"
+              placeholder="Add a comment..."
+              className="my-2 bg-transparent font-normal text-gray-800 placeholder-gray-500 focus:outline-none"
             />
           </div>
         </div>

@@ -1,9 +1,8 @@
 "use client";
-
-import React, { ReactNode } from "react";
 import { SessionProvider } from "next-auth/react";
-import type { AppProps } from "next/app";
-interface AuthProviderProps extends AppProps {
+import React, { ReactNode } from "react";
+
+interface AuthProviderProps {
   children: ReactNode;
 }
 

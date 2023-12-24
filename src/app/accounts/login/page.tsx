@@ -1,17 +1,18 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { FaSquareFacebook } from "react-icons/fa6";
 import bg1 from "../images/loginBg1.png";
 import bg2 from "../images/loginBg2.png";
 import bg3 from "../images/loginBg3.png";
 import iPFrame2 from "../images/frame.png";
-import logoText from "../images/737566.png";
+import logoText from "@/assets/images/InsText.png";
 import downloadAS from "../images/downloadAppStore.png";
 import downloadGP from "../images/downloadGooglePlay.png";
-import Link from "next/link";
-import "./style.scss";
+
 import Footer from "@/components/Footer/Footer";
+import "./style.scss";
 
 export default function LoginPage() {
   const images = [bg1, bg2, bg3];
@@ -27,33 +28,6 @@ export default function LoginPage() {
 
   return (
     <>
-      {/* <div className="flex min-h-full flex-1">
-        <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
-          <div className="image-container relative">
-            <Image
-              src={iPFrame2}
-              alt=""
-              className="w-[500px] h-auto image-fade"
-            />
-            <Image
-              src={images[currentImageIndex]}
-              alt=""
-              className="w-[275px] h-auto image-fade absolute top-6 left-[165px]"
-            />
-          </div>
-
-          <div className="block mt-6">
-            <form action="">
-              Instagram
-              <input
-                type="text"
-                className="ring-1 ring-gray-200 rounded-sm text-sm"
-                placeholder="Phone number, username or email"
-              />
-            </form>
-          </div>
-        </div>
-      </div> */}
       <div className="mt-10 flex justify-center ">
         {/* Images */}
         <div className="image-container relative mt-2 hidden lg:flex">
